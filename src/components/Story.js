@@ -29,7 +29,7 @@ export const Story = memo(function Story({ storyId }) {
   }, []);
 
   useEffect(() => {
-    getComments('2921983').then(data => data && data.url && setComment(data));
+    getComments(storyId).then(data => data && data.url && setComment(data));
   }, []);
 
 
